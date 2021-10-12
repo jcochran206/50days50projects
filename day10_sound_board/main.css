@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-color: #ffba26;
+    --primary-color: #082b60;
+    --accent-color: #3e3e3e;
+    --text-color: #fff;
+}
+
+body {
+    background-color: var(--bg-color);
+    display: flex;
+    flex-direction: row;
+    font-family: sans-serif;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+.btn {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    border-radius: 5px;
+    border: none;
+    margin: 1rem;
+    padding: 1.5rem 2rem; 
+    font-size: 1.2rem;
+    font-family: inherit;
+    cursor: pointer;
+}
+
+.btn:focus{
+    outline: none;
+}
+
+.btn:hover {
+    background-color: var(--accent-color);
+}
